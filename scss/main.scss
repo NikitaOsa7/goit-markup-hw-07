@@ -1,0 +1,23 @@
+//---BASE---//
+@import "./base/common";
+
+//---COMPONENTS--//
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/social-links";
+@import "./components/social-items";
+@import "./components/social-icons";
+
+//---LAYOUT---//
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/our-work";
+@import "./layout/team";
+@import "./layout/_clients";
+@import "./layout/footer";
+
+//---UTILS---//
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/global";
