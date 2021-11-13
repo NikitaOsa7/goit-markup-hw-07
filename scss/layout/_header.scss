@@ -4,7 +4,7 @@ header {
 }
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -81,7 +81,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 
-  fill: var(--primary-text-color);
+  fill: currentColor;
 
   &:hover,
   &:focus {
@@ -100,7 +100,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 
-  fill: var(--primary-text-color);
+  fill: currentColor;
 
   &:hover,
   &:focus {
@@ -125,7 +125,7 @@ header {
 }
 
 .menu-link.current::after {
-  content: "";
+  content: '';
   width: 100%;
   position: absolute;
   height: 4px;
