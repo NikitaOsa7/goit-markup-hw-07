@@ -195,22 +195,6 @@ header {
   margin-right: 50px;
 }
 
-.contacts__icon {
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  fill: currentColor;
-}
-
-.contacts--icon:hover,
-.contacts--icon:focus {
-  fill: var(--accent-color);
-}
-
 .contacts__link {
   font-weight: 500;
   font-size: 14px;
@@ -226,6 +210,22 @@ header {
 .contacts--link:hover,
 .contacts--link:focus {
   color: var(--accent-color);
+}
+
+.contacts__icon {
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: currentColor;
+}
+
+.contacts--icon:hover,
+.contacts--icon:focus {
+  fill: var(--accent-color);
 }
 
 /*-------------------hero---------------*/
@@ -593,6 +593,11 @@ header {
 
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.logo__part {
+  color: var(--third-text-color);
+  font-size: 26px;
 }
 
 .footer__item:not(:last-child) {
