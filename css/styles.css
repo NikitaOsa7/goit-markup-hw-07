@@ -103,9 +103,9 @@ a {
   background-color: var(--accent-color);
 }
 
-.navigation__link:hover,
-.navigation__link:focus,
-.navigation__link.current {
+.navigation--link:hover,
+.navigation--link:focus,
+.navigation--link.current {
   color: var(--accent-color);
 }
 /*-------------------header---------------*/
@@ -167,8 +167,8 @@ header {
   color: var(--header-text-color);
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation--link:hover,
+.navigation--link:focus {
   color: var(--accent-color);
 }
 
@@ -193,8 +193,8 @@ header {
   fill: currentColor;
 }
 
-.contacts__icon:hover,
-.contacts__icon:focus {
+.contacts--icon:hover,
+.contacts--icon:focus {
   fill: var(--accent-color);
 }
 
@@ -210,8 +210,8 @@ header {
   color: var(--primary-text-color);
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts--link:hover,
+.contacts--link:focus {
   color: var(--accent-color);
 }
 
@@ -448,8 +448,8 @@ header {
   transition-delay: 0ms;
 }
 
-.social__link:hover,
-.social__link:focus {
+.social--link:hover,
+.social--link:focus {
   background-color: var(--accent-color);
 }
 
@@ -462,8 +462,8 @@ header {
   transition-delay: 0ms;
 }
 
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
+.social--link:hover .social__icon,
+.social--link:focus .social__icon {
   fill: #ffffff;
 }
 
@@ -521,13 +521,13 @@ header {
   transition-delay: 0ms;
 }
 
-.client__link:hover .client__icon,
-.client__link:focus .client__icon {
+.client--link:hover .client__icon,
+.client--link:focus .client__icon {
   fill: var(--accent-color);
 }
 
-.client__link:hover,
-.client__link:focus {
+.client--link:hover,
+.client--link:focus {
   border-color: var(--accent-color);
 }
 
@@ -543,12 +543,12 @@ header {
   transition-delay: 0ms;
 }
 
-.client__icon:focus,
-.client__icon:hover {
+.client--icon:focus,
+.client--icon:hover {
   color: var(--accent-color);
 }
 
-.client__icon {
+.client--icon {
   fill: #afb1b8;
 }
 
@@ -645,12 +645,12 @@ header {
   transition-delay: 0ms;
 }
 
-.social-link__footer:hover,
-.social-link__footer:focus {
+.social-link--footer:hover,
+.social-link--footer:focus {
   background-color: var(--accent-color);
 }
 
-.social-link__footer {
+.social-link--footer {
   fill: #ffffff;
 }
 
@@ -661,8 +661,8 @@ header {
   transition-delay: 0ms;
 }
 
-.social-link__footer:hover .social__icon,
-.social-link__footer:focus .social__icon {
+.social-link--footer:hover .social__icon,
+.social-link--footer:focus .social__icon {
   fill: #ffffff;
 }
 
@@ -737,7 +737,7 @@ header {
   margin-left: 10px;
 }
 /* ----------------------portfolio----------------------- */
-.btn-portfolio {
+.btn_portfolio {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -757,8 +757,8 @@ header {
   color: var(--header-text-color);
 }
 
-.btn-portfolio:hover,
-.btn-portfolio:focus {
+.btn--portfolio:hover,
+.btn--portfolio:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -796,7 +796,7 @@ header {
   margin-left: 30px;
 }
 
-.example__item:hover .example__text {
+.example--item:hover .example__text {
   transform: translateY(0);
 }
 
@@ -850,8 +850,8 @@ header {
   color: var(--primary-text-color);
 }
 
-.example__link:hover,
-.example__link:focus {
+.example--link:hover,
+.example--link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -962,19 +962,19 @@ header {
   outline: none;
 }
 
-.modal-form__input:focus {
+.modal-form--input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-form__input:focus + .modal-form-icon {
+.modal-form--input:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
 
-.modal-form__wrapper:focus {
+.modal-form--wrapper:focus {
   fill: var(--accent-color);
 }
 
-.modal-form__input:focus {
+.modal-form--input:focus {
   border-color: var(--accent-color);
 }
 
@@ -1045,7 +1045,7 @@ header {
   margin-right: 8.328px;
 }
 
-.modal-form__checkbox:checked + .modal-form-checkbox-label::before {
+.modal-form--checkbox:checked + .modal-form--checkbox--label::before {
   background-image: url(../img/icon-check.svg);
   border-color: var(--accent-color);
   border: 0px;
@@ -1054,7 +1054,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.modal-form__checkbox:focus + .modal-form-checkbox-label::before {
+.modal-form--checkbox:focus + .modal-form--checkbox--label::before {
   outline: 1px solid var(--header-text-color);
 }
 
