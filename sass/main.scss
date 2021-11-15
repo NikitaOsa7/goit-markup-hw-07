@@ -1,0 +1,14 @@
+/*---BASE---*/
+@import './base/_common.scss';
+
+/*---COMPONENTS---*/
+@import './components/social';
+@import './components/backdrop';
+@import './components/modal';
+
+/*---LAYOUT---*/
+
+/*---UTILS---*/
+@import './utils/visually-hidden';
+@import './utils/variables';
+@import './utils/global';
