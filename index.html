@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container container__header">
             <a href="#" class=" logo header__logo"><span class="logo__dark">Web</span>Studio</a>
-            <nav class="header__navigation">
+            <nav class="navigation">
                 <ul class="list navigation__list">
                     <li class="navigation__item">
                         <a href="./index.html" class="navigation__link navigation--link current">Студия</a>
@@ -34,7 +34,7 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="list contacts__list">
+            <ul class="list contacts">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link contacts--link">
                         <svg class="contacts__icon contacts--icon" width="16" height="12">
@@ -44,7 +44,7 @@
                 </li>
                 <li class="contacts__item">
                     <a href="tel:+380961111111" class="contacts__link contacts--link">
-                        <svg class="contacts__icon contacts--icon" width="10" height="16">
+                        <svg class="contacts__icon" width="10" height="16">
                             <use href="./img/sprite-connect.svg#icon-tel"></use>
                         </svg>+38 096-111-11-11
                     </a>
@@ -61,10 +61,10 @@
             </div>
         </section>
         <section class="section">
-            <div class="container container__features">
+            <div class="container">
                 <h2 class="visually-hidden">НАШИ ПРИЕМУЩЕСТВА</h2>
-                <ul class="features__list">
-                    <li class="features--item">
+                <ul class="features">
+                    <li class="features__item">
                         <div class="features__thumb">
                             <svg class="features__icon">
                                 <use href="./img/sprite.svg#icon-antenna"></use>
@@ -110,8 +110,8 @@
         <!-----our-work------>
         <section class="section busyness__section">
             <div class="container container__busyness">
-                <h2 class="busyness__title">Чем мы занимаемся</h2>
-                <ul class="busyness__list">
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="busyness">
                     <li class="busyness__item">
                         <img src="./img/doing-something-1.jpg" alt="Человек печатает на клавиатуре" width="370"
                             height="294" class="image-presentation-1" />
@@ -134,8 +134,8 @@
         <section class="section team__section">
             <div class="container container__team">
                 <h2 class="team__title">Наша команда</h2>
-                <ul class="team__list">
-                    <li class="team__card card--item">
+                <ul class="team">
+                    <li class=" card__item">
                         <img src="./img/igor-1.jpg" alt="Светловолосый мужчина в очках" width="270" height="260"
                             class="card__picture">
                         <div class="team__desk">
@@ -173,7 +173,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__card card--item">
+                    <li class="card__item">
                         <img src="./img/olga-2.jpg" alt="Улыбающаяся девушка" width="270" height="260"
                             class="card__picture">
                         <div class="team__desk">
@@ -211,13 +211,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__card card--item">
+                    <li class="card__item">
                         <img src="./img/nikolay-3.jpg" alt="Темноволосый мужчина" width="270" height="260"
                             class="card__picture">
                         <div class="team__desk">
                             <h3 class="card__title">Николай Тарасов</h3>
                             <p class="card__position">Marketing</p>
-                            <ul class="social__list list">
+                            <ul class="social list">
                                 <li class="social__item">
                                     <a href="" class="social__link social--link">
                                         <svg class="social__icon" width="20" height="20">
@@ -249,7 +249,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__card card--item">
+                    <li class="card__item">
                         <img src="./img/mikhail-4.jpg" alt="Темноволосый мужчина в очках" width="270" height="260"
                             class="card__picture">
                         <div class="team__desk">
@@ -291,9 +291,9 @@
             </div>
         </section>
         <section class="section section__clients">
-            <div class="container container__clients">
+            <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
-                <ul class="list clients__list">
+                <ul class="list clients">
                     <li class="clients__item">
                         <a href="#" class="client__link client--link link">
                             <svg class="client__icon client--icon">
@@ -458,7 +458,7 @@
 
                 <input type="checkbox" id="policy-accept" class="modal-form__checkbox modal-form--checkbox visually-hidden" />
                 <label for="policy-accept" class="modal-form__checkbox-label modal-form--checkbox--label">Соглашаюсь с рассылкой и принимаю&nbsp;
-                    <a href="#">Условия договора</a>
+                    <a href="#" class="policy__link">Условия договора</a>
                 </label>
                 <div class="container__form-button">
                     <button class="modal-form__button" type="submit">Отправить</button>

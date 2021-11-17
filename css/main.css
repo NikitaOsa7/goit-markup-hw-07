@@ -121,7 +121,7 @@ header {
   fill: #ffffff;
 }
 
-.social__list {
+.social {
   display: flex;
   justify-content: center;
 }
@@ -184,7 +184,8 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -271,7 +272,7 @@ header {
   border-color: var(--accent-color);
 }
 
-.modal-form--input:focus + .modal-form-icon {
+.modal-form--input:focus + .modal-form--icon {
   fill: var(--accent-color);
 }
 
@@ -445,7 +446,7 @@ header {
   margin-right: 50px;
 }
 
-.contacts__list {
+.contacts {
   margin-left: auto;
   align-items: center;
   display: flex;
@@ -493,7 +494,11 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/background-hero.jpg);
 }
 
 .hero__title {
@@ -535,11 +540,11 @@ header {
   background-color: var(--secondary-background-color);
 }
 
-.features__list {
+.features {
   display: flex;
 }
 
-.features--item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -584,7 +589,7 @@ header {
   padding-top: 0;
 }
 
-.busyness__title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 0.76;
@@ -594,7 +599,7 @@ header {
   color: var(--secondary-title-color);
 }
 
-.busyness__list {
+.busyness {
   display: flex;
   margin-top: 50px;
 }
@@ -635,21 +640,18 @@ header {
   color: var(--secondary-title-color);
 }
 
-.team__list {
+.team {
   display: flex;
 }
 
-.team__card {
-  width: 270px;
-  height: 428px;
-  left: 215px;
-  top: 1785px;
+.card__item {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.card--item:not(:last-child) {
+.card__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -700,14 +702,14 @@ header {
   margin-bottom: 50px;
 }
 
-.clients__list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.clients__item {
-  cursor: pointer;
+.clients__item:not(:first-child) {
+  margin-left: auto;
 }
 
 .clients__item:not(:first-child) {
@@ -861,7 +863,7 @@ header {
 }
 
 /* ----------------------header----------------------- */
-.btn__portfolio {
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -878,30 +880,31 @@ header {
   color: var(--header-text-color);
 }
 
-.btn--portfolio:hover,
-.btn--portfolio:focus {
+.filter__button:hover,
+.filter__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.buttons__list {
+.filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.menu__buttons {
+.filter__item {
   margin-right: 8px;
 }
 
-.menu__buttons:last-child {
+.filter__item:last-child {
   margin: 0;
 }
 
 /* ----------------------example-list----------------------- */
-.example__list {
+.example {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
@@ -914,7 +917,7 @@ header {
   margin-left: 30px;
 }
 
-.example--item:hover .example__text {
+.example__item:hover .example__text {
   transform: translateY(0);
 }
 
@@ -967,7 +970,8 @@ header {
 
 .example__link:hover,
 .example__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example__link {
@@ -1007,11 +1011,6 @@ header {
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-
-.container__clients {
-  width: 1170px;
-  height: 184px;
 }
 
 .container__footer {

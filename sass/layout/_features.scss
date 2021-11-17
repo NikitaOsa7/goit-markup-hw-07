@@ -1,8 +1,8 @@
-.features__list {
+.features {
   display: flex;
 }
 
-.features--item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
